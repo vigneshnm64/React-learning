@@ -18,7 +18,7 @@ const Fruits = ({ name, emoji, price,soldout }) => {
     //       </h1>
     //     ) : (
     //       ""
-    //     )}
+    //     )
     //   </li>
     // </div>
     <>
