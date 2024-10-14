@@ -5,10 +5,17 @@ const Form = () => {
 
   // setting multiple input field//
 
-  const [name, setName] = useState({
+  const [name, setName] = useState({ 
     firestName: "",
     lastName: "",
   });
+
+
+  function handleClick(e){
+    e.preventDefault();
+    console.log(name)
+
+  }
 
   //   function handleChange(e) {
   //     // console.log(e.target.value);
@@ -42,6 +49,8 @@ const Form = () => {
           onChange={(e) => setName({ ...name, lastName: e.target.value })}
           value={name.lastName}
         />
+
+        <button onClick={(e)=>handleClick(e)}>Add</button>
       </form>
     </div>
   );
